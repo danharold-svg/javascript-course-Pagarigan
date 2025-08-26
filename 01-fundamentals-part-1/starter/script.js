@@ -74,95 +74,158 @@
  
  
 // function newFunction() {
-     console.log("=== MATH OPERATORS ===");
+    //  console.log("=== MATH OPERATORS ===");
  
-     const now = 2023;
-     const ageDan = now - 2004;
-     const ageJohn = now - 2001;
-     console.log(ageDan, ageJohn);
+    //  const now = 2023;
+    //  const ageDan = now - 2004;
+    //  const ageJohn = now - 2001;
+    //  console.log(ageDan, ageJohn);
  
-     console.log(ageDan * 2, ageJohn / 10, 2 ** 3); // Exponentiation operator
-     console.log("Math Operations");
-     console.log("Addition:", ageDan + ageJohn);
-     console.log("Subtraction:", ageDan - ageJohn);
-     console.log("Multiplication:", ageDan * ageJohn);
-     console.log("Division:", ageDan / ageJohn);
-     console.log("Exponentiation:", 2 ** 3);
+    //  console.log(ageDan * 2, ageJohn / 10, 2 ** 3); // Exponentiation operator
+    //  console.log("Math Operations");
+    //  console.log("Addition:", ageDan + ageJohn);
+    //  console.log("Subtraction:", ageDan - ageJohn);
+    //  console.log("Multiplication:", ageDan * ageJohn);
+    //  console.log("Division:", ageDan / ageJohn);
+    //  console.log("Exponentiation:", 2 ** 3);
  
-     // Math with Strings
-     const firstName = "Dan";
-     const lastName = "Pagarigan";
-     console.log(firstName + " " + lastName);
+    //  // Math with Strings
+    //  const firstName = "Dan";
+    //  const lastName = "Pagarigan";
+    //  console.log(firstName + " " + lastName);
  
-     console.log("Hello " + "World" + "!");
- 
- 
-     //Assignment Operators
-     console.log("=== ASSIGNMENT OPERATORS ===");
- 
-     let x = 10 + 5;
-     console.log("x starts as:", x);
- 
-     x += 10;
-     console.log("x starts as:", x);
- 
-     x *= 4;
-     console.log("x starts as:", x);
- 
-     x /= 2;
-     console.log("x starts as:", x);
- 
-     x++;
-     console.log("x starts as:", x);
- 
-     x--;
-     console.log("x starts as:", x);
- 
-     x++;
-     console.log("x starts as:", x);
- 
-     // Comparison Operators
-     console.log("=== COMPARISON OPERATORS ===");
-     console.log("Age comparison");
- 
-     console.log(ageJohn > ageDan); // Greater than
-     console.log(ageDan >= 18); // Less than
-     console.log(ageJohn < 30); // Greater than or equal to
-     console.log(ageDan <= ageJohn); // Less than or equal to
+    //  console.log("Hello " + "World" + "!");
  
  
-     console.log("Number comparisons:");
-     console.log(25 > 20); // true
-     console.log(15 < 10); // false
-     console.log(18 >= 18); // true
-     console.log(16 <= 15); // false
+    //  //Assignment Operators
+    //  console.log("=== ASSIGNMENT OPERATORS ===");
  
-     const isFullAge = ageDan >= 18;
-    console.log("Is Dan adult age?", isFullAge);
+    //  let x = 10 + 5;
+    //  console.log("x starts as:", x);
  
-     console.log("Complex comparisons:");
-     console.log(now - 2004 > now - 2001); // true
+    //  x += 10;
+    //  console.log("x starts as:", x);
  
-    let z, y;
-    z = y = 25 - 10 - 5; // Assigning the result of the expression to both z and y
-     console.log(z, y);
+    //  x *= 4;
+    //  console.log("x starts as:", x);
  
-     const averageAge = (ageDan + ageJohn) / 2;
-     console.log(ageDan, ageJohn, averageAge);
+    //  x /= 2;
+    //  console.log("x starts as:", x);
  
-     //Coding
-     //Test Data 1
-     const massDan = 52;
-     const heightDan = 1.60;
-     const massJohn = 60;
-     const heightJohn = 1.75;
+    //  x++;
+    //  console.log("x starts as:", x);
  
-     const bmiDan= massDan / (heightDan ** 2);
-     const bmiJohn = massJohn / (heightJohn ** 2);
+    //  x--;
+    //  console.log("x starts as:", x);
  
-     const DanHigherBMI = bmiDan > bmiJohn;
+    //  x++;
+    //  console.log("x starts as:", x);
  
-     console.log(bmiDan);
-     console.log(bmiJohn);
+    //  // Comparison Operators
+    //  console.log("=== COMPARISON OPERATORS ===");
+    //  console.log("Age comparison");
  
-     console.log(DanHigherBMI);
+    //  console.log(ageJohn > ageDan); // Greater than
+    //  console.log(ageDan >= 18); // Less than
+    //  console.log(ageJohn < 30); // Greater than or equal to
+    //  console.log(ageDan <= ageJohn); // Less than or equal to
+ 
+ 
+    //  console.log("Number comparisons:");
+    //  console.log(25 > 20); // true
+    //  console.log(15 < 10); // false
+    //  console.log(18 >= 18); // true
+    //  console.log(16 <= 15); // false
+ 
+    //  const isFullAge = ageDan >= 18;
+    // console.log("Is Dan adult age?", isFullAge);
+ 
+    //  console.log("Complex comparisons:");
+    //  console.log(now - 2004 > now - 2001); // true
+ 
+    // let z, y;
+    // z = y = 25 - 10 - 5; // Assigning the result of the expression to both z and y
+    //  console.log(z, y);
+ 
+    //  const averageAge = (ageDan + ageJohn) / 2;
+    //  console.log(ageDan, ageJohn, averageAge);
+ 
+    //  //Coding
+    //  //Test Data 1
+    //  const massDan = 52;
+    //  const heightDan = 1.60;
+    //  const massJohn = 60;
+    //  const heightJohn = 1.75;
+ 
+    //  const bmiDan= massDan / (heightDan ** 2);
+    //  const bmiJohn = massJohn / (heightJohn ** 2);
+ 
+    //  const DanHigherBMI = bmiDan > bmiJohn;
+ 
+    //  console.log(bmiDan);
+    //  console.log(bmiJohn);
+ 
+    //  console.log(DanHigherBMI);
+
+//  // PART 3
+
+    const firstName = "Dan Harold";
+const lastName = "Pagarigan";
+const job = "Developer";
+const birthYear = 2004;
+const year = 2025;
+ 
+const dan = "I'm " + firstName + " " + lastName + ", a " + job + ". I was born in " + birthYear + ", and I'm currently " + (year - birthYear) + " years old.";
+console.log(dan);
+ 
+ 
+const danNew = `I'm ${firstName} ${lastName}, a ${job}. I was born in ${birthYear}, and I'm currently ${year - birthYear} years old.`;  
+console.log(danNew);
+ 
+const danNew2 = `I'm ${firstName} ${lastName}, a ${job}. I was born in ${birthYear}, and I'm currently ${year - birthYear} years old.`;
+console.log(danNew2);
+ 
+console.log(`I'm ${2025 - 1972} years old.`);
+console.log( `Math works here: ${2 + 3} equals five`);
+ 
+// IF-ELSE STATEMENTS
+console.log("=== IF-ELSE STATEMENTS ===");
+ 
+const age = 20;
+ 
+if (age >= 60) {
+    console.log("You are an Senior Citizen.");
+ 
+} else if(age >= 18) {
+    console.log("You are an Adult.");
+} else if (age >= 13) {
+    console.log("You are a Teenager.");
+} else {
+    console.log("You are a Child.");
+}
+ 
+ 
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Dan Harold"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+ 
+////////////////////////////////////
+// Coding Challenge #1 - BMI Calculator
+ 
+const massDan = 78;
+const heightDan = 1.69;
+const massHarold = 92;
+const heightHarold = 1.95;
+ 
+const   bmiDan = massDan / (heightDan ** 2);
+const   BMIHarold = massHarold / (heightHarold * heightHarold);
+console.log(bmiDan, BMIHarold);
+ 
+ 
+if(bmiDan > BMIHarold) {
+    console.log(`Jpdc's BMI (${bmiDan.toFixed(2)}) is higher than Harold's (${BMIHarold.toFixed(2)})!`);
+} else {
+    console.log(`Harold's BMI (${BMIHarold.toFixed(2)}) is higher than Dan's (${bmiDan.toFixed(2)})!`);
+}  
