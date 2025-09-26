@@ -434,7 +434,6 @@ const optimizedAnalysis = analyzeWorkWeekOptimized(weeklyHours);
 console.log('Optimized analysis:', optimizedAnalysis);
 
 function legacyForecastFunction(temperatures) {
-  // Multiple bugs hidden in this code!
   var result = '';
   for (var i = 1; i <= temperatures.length; i++) {
     result = result + temperatures[i] + ' degrees in day ' + i + ', ';
@@ -442,6 +441,37 @@ function legacyForecastFunction(temperatures) {
   return result;
 }
 
-// Test the buggy function to see what goes wrong
 const testData = [15, 18, 22, 19];
 console.log('Buggy function output:', legacyForecastFunction(testData));
+
+// Completely fixed and enhanced version
+function enhancedForecastFunction(temperatures, options = {}) {
+  if (!Array.isArray(temperatures) || temperatures.length === 0) {
+    console.error('Invalid input: temperatures must be a non-empty array');
+    return '';
+  }
+
+  const { unit = '°C', separator = '...', includeIndex = true } = options;
+
+  let result = '';
+
+  for (let i = 0; i < temperatures.length; i++) {
+    const dayNumber = includeIndex ? i + 1 : i;
+    result += `${temperatures[i]}${unit} in ${dayNumber} days${separator}`;
+  }
+
+  return separator + result.slice(0, -separator.length);
+}
+
+console.log('Enhanced function (default):', enhancedForecastFunction(testData));
+console.log(
+  'Enhanced function (custom):',
+  enhancedForecastFunction(testData, {
+    unit: '°F',
+    separator: ' | ',
+    includeIndex: true,
+  })
+);
+
+console.log('🎯 Complete developer skills successfully applied!');
+console.log('Legacy code debugged, fixed, and enhanced systematically');
